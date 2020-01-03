@@ -29,3 +29,9 @@ print(f'The random seed was: {num}')
 if crypt[0]=='0':
   print('\nIt has a 0 at the start\n')
 print(f'The two new keys are, \nPass1: {pass1} \nPass2: {pass2}')
+
+with open('pass.txt', 'w') as f:
+  f.write('Pass1 is: ' + str(pass1))
+  f.write('\n')
+  f.write('Pass2 is: ' + str(pass2))
+f.close()
