@@ -14,6 +14,8 @@ orignal = int(code1)-(int(slope))
 
 if(choice == 'y'):
   orignal = '0' + str(orignal)
+if(choice == 'n'):
+	orignal = str(orignal)
 
 print(f'The converted orignal text was {orignal}')
 #print(len(str(pass1)))
@@ -25,4 +27,8 @@ for i in range(len(orignal)):
     end = i + 3
     va = str(va) + str(chr(int(orignal[start:end])))
 
-print(f'The orignal text was {va}')
+print('The orignal text was "' + va +'"')
+
+with open('text.txt', 'w') as f:
+  f.write('Orignal text: ' + va)
+f.close()
