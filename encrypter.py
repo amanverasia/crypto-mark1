@@ -1,6 +1,6 @@
 #encrypting
 from random import randint
-text = input('Enter the text that you want to put: ')
+text = input('Enter the text that you want to put: \n \n')
 crypt = ''
 
 
