@@ -9,7 +9,7 @@ while(check == False):
 
 
 slope = (int(code2)-int(code1))
-print(f'The slope of it is: {str(slope)}')
+print(f'\nThe slope of it is: {str(slope)}\n')
 orignal = int(code1)-(int(slope))
 
 if(choice == 'y'):
@@ -17,7 +17,7 @@ if(choice == 'y'):
 if(choice == 'n'):
 	orignal = str(orignal)
 
-print(f'The converted orignal text was {orignal}')
+print(f'The converted orignal text was {orignal}\n')
 #print(len(str(pass1)))
 
 va = ''
@@ -27,7 +27,7 @@ for i in range(len(orignal)):
     end = i + 3
     va = str(va) + str(chr(int(orignal[start:end])))
 
-print('The orignal text was "' + va +'"')
+print('The orignal text was: "' + va +'"')
 
 with open('text.txt', 'w') as f:
   f.write('Orignal text: ' + va)
