@@ -20,7 +20,7 @@ def converter(text):
 
 
 crypt = converter(text)
-print(f'\nThis is the converted form {crypt} and it has a length of {len(crypt)}\n\n')
+print(f'\nThis is the converted form {crypt} and it has a length of {len(crypt)}\n')
 
 num = random_n(len(crypt))
 pass1 = num*1 + int(crypt)
