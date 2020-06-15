@@ -3,7 +3,7 @@ code1 = input('Enter the first code: ')
 code2 = input('Enter the second code: ')
 check = False
 while(check == False):
-  choice = input('Did the code have a zero at the beginning?(y/n)')
+  choice = input('Did the code have a zero at the beginning?(y/n): ')
   if(choice == 'y' or choice == 'n'):
     check = True
 
